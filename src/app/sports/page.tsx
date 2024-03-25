@@ -37,7 +37,7 @@ const Sports = () => {
   return (
     <div>
       <h3 className="mb-8">
-        <span className="border-b-2 pb-1 border-[#738FFF] text-2xl font-bold font-popp">
+        <span className="border-b-2 pb-1 border-[#738FFF] text-2xl font-bold ">
           Sports
         </span>
       </h3>

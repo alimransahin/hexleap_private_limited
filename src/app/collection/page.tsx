@@ -36,12 +36,14 @@ const Collection = () => {
   ];
   return (
     <div className="bg-gradient-to-b from-[#18282A] to-[#221A2C] p-12">
-      <h1 className="font-bold text-4xl text-center">Collection Spotlight</h1>
-      <p className="text-center font-sans text-[12px] my-4">
-        Discover extraordinary moments with our Spotlight Collection
-        metatickets—exclusive access to premium events for an unforgettable
-        experience. Grab yours today!
-      </p>
+      <div>
+        <h1 className="font-bold text-4xl text-center">Collection Spotlight</h1>
+        <p className="text-center font-sans text-[12px] my-4">
+          Discover extraordinary moments with our Spotlight Collection
+          metatickets—exclusive access to premium events for an unforgettable
+          experience. Grab yours today!
+        </p>
+      </div>
       <div className="cards grid grid-cols-5 gap-4 font-sans">
         {collections.map((collection) => (
           <div
