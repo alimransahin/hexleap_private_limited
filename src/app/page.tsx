@@ -1,5 +1,9 @@
+import Sports from "./sports/page";
+
 export default function Home() {
   return (
- <button className="btn btn-primary">Hello daisyUI!</button>
+    <div>
+      <Sports />
+    </div>
   );
 }
