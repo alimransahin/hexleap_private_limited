@@ -69,6 +69,7 @@ const Sports = () => {
           </div>
         ))}
         <div className="card p-3 bg-[#3B3E47]">
+          <div>https://i.ibb.co/9HmxbRJ/add.png</div>
           <div>Add</div>
         </div>
       </div>

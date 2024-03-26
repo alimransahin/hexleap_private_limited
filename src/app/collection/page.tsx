@@ -5,7 +5,7 @@ const Collection = () => {
   const collections = [
     {
       id: 1,
-      image: "https://i.ibb.co/WzYN4zF/Las-Vegas-Aviators-2.jpg",
+      image: "https://i.ibb.co/VttdRmy/Ticket-Mockup-4.png",
       name: "Las Vegas Aviators",
       date: "Oct 15",
       day: "Sun",
@@ -15,7 +15,7 @@ const Collection = () => {
     },
     {
       id: 2,
-      image: "https://i.ibb.co/Y0fb1L6/Sacramento-River-Cats2.jpg",
+      image: "https://i.ibb.co/6YJCpkP/unnamed-1.png",
       name: "Sacramento River Cats",
       date: "Oct 15",
       day: "Sun",
@@ -23,9 +23,10 @@ const Collection = () => {
       address: "Sutter Health Park, Sacramento, California",
       collection: "Orange Collection",
     },
+
     {
       id: 3,
-      image: "https://i.ibb.co/WzYN4zF/Las-Vegas-Aviators-2.jpg",
+      image: "https://i.ibb.co/VttdRmy/Ticket-Mockup-4.png",
       name: "Las Vegas Aviators",
       date: "Oct 15",
       day: "Sun",
@@ -47,7 +48,7 @@ const Collection = () => {
       <div className="cards grid grid-cols-5 gap-4 font-sans">
         {collections.map((collection) => (
           <div
-            className="card p-3 bg-white dark:bg-[#3B3E47] shadow-md"
+            className="card bg-white dark:bg-[#3B3E47] shadow-md"
             key={collection.id}
           >
             <Image
@@ -57,15 +58,19 @@ const Collection = () => {
               alt="card-image"
               layout="responsive"
             ></Image>
-            <h3 className="font-medium my-3 text-[17px] ">{collection.name}</h3>
-            <div className="footer bg-[#F7F7F8] dark:bg-[#292B32] grid grid-cols-2 p-2">
-              <div className="event">
-                <p className="text-xs mb-1 ">Total Events</p>
-                <h4 className="font-medium text-sm">{collection.id}</h4>
-              </div>
-              <div className="sports">
-                <p className="text-xs mb-1 ">Sport</p>
-                <h4 className="font-medium text-sm">{collection.id}</h4>
+            <div className="footer p-3 text-center">
+              <h3 className="font-medium mb-3 text-[17px] ">
+                {collection.name}
+              </h3>
+              <div className="footer bg-[#F7F7F8] dark:bg-[#292B32] grid grid-cols-2 p-2">
+                <div className="event">
+                  <p className="text-xs mb-1 ">Total Events</p>
+                  <h4 className="font-medium text-sm">{collection.id}</h4>
+                </div>
+                <div className="sports">
+                  <p className="text-xs mb-1 ">Sport</p>
+                  <h4 className="font-medium text-sm">{collection.id}</h4>
+                </div>
               </div>
             </div>
           </div>
