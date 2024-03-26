@@ -68,14 +68,28 @@ const Sports = () => {
             </div>
           </div>
         ))}
-        <div className="card p-3 bg-[#3B3E47]">
-          <Image
-            src="https://i.ibb.co/9HmxbRJ/add.png"
-            height={100}
-            width={100}
-            alt="add"
-          ></Image>
-          <div>Add</div>
+        <div className="card p-3 bg-white dark:bg-[#3B3E47] relative ">
+          <div className="border-[1px] dark:border-0 border-[#006555] h-full">
+            <Image
+              src="https://i.ibb.co/9HmxbRJ/add.png"
+              height={100}
+              width={100}
+              alt="add"
+              layout="responsive"
+            ></Image>
+            <div className="absolute top-[.78rem] right-[.78rem] bg-black text-white text-sm px-4 py-0.5">
+              Ad
+            </div>
+            <h2 className="font-semibold text-2xl text-center mt-4">
+              Advertisement title
+            </h2>
+            <p className="text-sm p-2 text-[#525965] dark:text-[#dfdfdf]">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem
+              ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
         </div>
       </div>
       <div className=" text-center my-12">

@@ -71,16 +71,16 @@ export default function SimpleSlider() {
             layout="responsive"
             className="pt-3"
           ></Image>
-          <div className="footer px-3 text-center relative">
+          <div className="footer px-5 text-center relative">
             <div className="ellipse w-5 h-5 rounded-full bg-[#ECF0F6] dark:bg-[#1F1E2B] absolute top-[-10px] left-[-10px]"></div>
             <div className="ellipse w-5 h-5 rounded-full bg-[#ECF0F6] dark:bg-[#1F1E2B] absolute top-[-10px] right-[-10px]"></div>
-            <h3 className="font-medium pt-3 mx-6 text-xl border-t-2 border-[#818A97] border-dashed ">
+            <h3 className="font-medium pt-3 mx-3 text-xl border-t-2 border-[#818A97] border-dashed ">
               {collection.name}
             </h3>
             <p className="text-md">
               {collection.date} | {collection.day} | {collection.time}
             </p>
-            <p className="text-md">{collection.address}</p>
+            <p className="text-md text-[#dfdfdf]">{collection.address}</p>
             <Button className="rounded-none bg-black w-full text-white hover:bg-black my-3">
               {collection.collection}
             </Button>
