@@ -55,7 +55,7 @@ const Sports = () => {
               alt="card-image"
               layout="responsive"
             ></Image>
-            <h3 className="font-medium my-3 text-[17px] ">{sport.name}</h3>
+            <h3 className="font-medium my-3 text-lg ">{sport.name}</h3>
             <div className="footer bg-[#F7F7F8] dark:bg-[#292B32] grid grid-cols-2 p-2">
               <div className="event">
                 <p className="text-xs mb-1 ">Total Events</p>
@@ -69,7 +69,12 @@ const Sports = () => {
           </div>
         ))}
         <div className="card p-3 bg-[#3B3E47]">
-          <div>https://i.ibb.co/9HmxbRJ/add.png</div>
+          <Image
+            src="https://i.ibb.co/9HmxbRJ/add.png"
+            height={100}
+            width={100}
+            alt="add"
+          ></Image>
           <div>Add</div>
         </div>
       </div>

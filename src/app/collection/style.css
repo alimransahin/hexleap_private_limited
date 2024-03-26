@@ -1,0 +1,23 @@
+.slick-slide {
+  padding: 18px;
+}
+.slick-arrow:before {
+  content: "";
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  border: 2px solid #2c9cf0;
+  padding: 30px 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.slick-prev:before {
+  background-image: url("https://i.ibb.co/J3ykDG1/left.png");
+}
+.slick-next {
+  right: -3px;
+}
+.slick-next:before {
+  background-image: url("https://i.ibb.co/dGhMJtJ/right.png ");
+  right: 100px;
+}
