@@ -1,5 +1,5 @@
 import React from "react";
-import SimpleSlider from "./CaroselSlide";
+import SimpleSlider from "../../components/CaroselSlide";
 
 const Collection = () => {
   return (

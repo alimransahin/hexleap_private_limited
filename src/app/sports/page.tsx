@@ -42,7 +42,7 @@ const Sports = () => {
         </span>
       </h3>
 
-      <div className="cards grid grid-cols-5 gap-4 font-sans">
+      <div className="cards grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-5 gap-4 font-sans">
         {sports.map((sport) => (
           <div
             className="card p-3 bg-white dark:bg-[#3B3E47] shadow-md"

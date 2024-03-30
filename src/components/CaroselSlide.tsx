@@ -11,7 +11,7 @@ export default function SimpleSlider() {
     {
       id: 1,
       image: "https://i.ibb.co/VttdRmy/Ticket-Mockup-4.png",
-      name: "Las Vegas Aviators",
+      name: "Sacramento River Cats",
       date: "Oct 15",
       day: "Sun",
       time: "4:30 PM",
@@ -32,7 +32,7 @@ export default function SimpleSlider() {
     {
       id: 3,
       image: "https://i.ibb.co/VttdRmy/Ticket-Mockup-4.png",
-      name: "Las Vegas Aviators",
+      name: "Sacramento River Cats",
       date: "Oct 15",
       day: "Sun",
       time: "4:30 PM",
@@ -54,7 +54,21 @@ export default function SimpleSlider() {
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 1,
-    className: "slider px-28",
+    className: "slider px-4 xl:px-16 2xl:px-28",
+    responsive: [
+      {
+        breakpoint: 1280,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 640,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
   };
   return (
     <Slider {...settings}>
@@ -72,15 +86,15 @@ export default function SimpleSlider() {
             className="pt-3"
           ></Image>
           <div className="footer px-5 text-center relative">
-            <div className="ellipse w-5 h-5 rounded-full bg-[#ECF0F6] dark:bg-[#1F1E2B] absolute top-[-10px] left-[-10px]"></div>
-            <div className="ellipse w-5 h-5 rounded-full bg-[#ECF0F6] dark:bg-[#1F1E2B] absolute top-[-10px] right-[-10px]"></div>
+            <div className="ellipse w-5 h-5 rounded-full bg-transparent dark:bg-[#1F1E2B] absolute top-[-10px] left-[-10px]"></div>
+            <div className="ellipse w-5 h-5 rounded-full bg-transparent dark:bg-[#1F1E2B] absolute top-[-10px] right-[-10px]"></div>
             <h3 className="font-medium pt-3 mx-3 text-xl border-t-2 border-[#818A97] border-dashed ">
               {collection.name}
             </h3>
             <p className="text-md">
               {collection.date} | {collection.day} | {collection.time}
             </p>
-            <p className="text-md text-[#dfdfdf]">{collection.address}</p>
+            <p className="text-md dark:text-[#dfdfdf]">{collection.address}</p>
             <Button className="rounded-none bg-black w-full text-white hover:bg-black my-3">
               {collection.collection}
             </Button>
