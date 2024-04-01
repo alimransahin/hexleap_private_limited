@@ -8,3 +8,6 @@ https://react-slick.neostack.com/
 
 ##  Figma file
 https://www.figma.com/file/haRpTRIlpv4Umh4eJ9QaT3/H-Frontend-Assignment?type=design&mode=design&t=1LYZuVNwjmdajjO2-0
+
+## Dark Mode
+https://ui.shadcn.com/docs/dark-mode/next
